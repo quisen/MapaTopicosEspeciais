@@ -1,17 +1,13 @@
 package mapatopicosespeciais;
 
-/**
- *
- * @author Rodrigo Quisen
- */
-abstract class Operacao implements Elemento {
-
-    protected Elemento elemento1;
-    protected Elemento elemento2;
-
-    public double Operacao(Elemento elemento1, Elemento elemento2) {
-        return 0;
-        
-    };
-
+public abstract class Operacao implements Elemento {
+    
+    Elemento elemento1;
+    Elemento elemento2;
+   
+    public Operacao(Elemento elemento1, Elemento elemento2) {
+        this.elemento1 = elemento1;
+        this.elemento2 = elemento2;
+    }
+    
 }
